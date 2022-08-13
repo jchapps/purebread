@@ -2,8 +2,8 @@
   <h1><%= @sandwich.name %></h1>
   <% @sandwich.shops.each do |shop| %>
     <ul>
-      <%= shop.ingredient.name %>
-      <%= shop.ingredient.description %>
+      <div><%= shop.ingredient.name %></div>
+      <div><%= shop.ingredient.description %></div>
     </div>
   </ul>
 <% end %>
