@@ -1,4 +1,5 @@
 class Sandwich < ApplicationRecord
+  has_one_attached :photo
   has_many :shops
   has_many :ingredients, :through => :shops, dependent: :destroy
 

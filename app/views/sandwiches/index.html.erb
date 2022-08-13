@@ -1,14 +1,21 @@
 <h1>sandwiches</h1>
-<% @sandwiches.each do |sarny| %>
-  <ul>
-    <%= sarny.name %>
-    <div><%= sarny.description %></div>
-    <div><%= sarny.cost %></div>
-    <img class="card-img-top" src='<%= sarny.photo.attached? ? cl_image_path(sarny.photo.key) : "http://source.unsplash.com/featured/?#{sarny.name}sandwich&#{rand(1000)}" %>'>
-    <div>
-      <%=link_to "Show Ingredients", sandwich_path(sarny) %>
-    </div>
-  </ul>
-<% end %>
+<div class="d-flex justify-content-center">
+  <div class="row">
+    <% @sandwiches.each do |sarny| %>
+      <div class="col-sm">
+        <div class="card" style="width: 18rem;">
+          <img src='<%= sarny.photo.attached? ? cl_image_path(sarny.photo.key) : "http://source.unsplash.com/featured/?#{sarny.name}sandwich&#{rand(1000)}" %>' class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title"><%= sarny.name %></h5>
+            <p class="card-text"><%= sarny.description%></p>
+            <%= link_to "Show Ingredients", sandwich_path(sarny), class: "btn btn-primary" %>
+          </div>
+        </div>
+      </div>
+    </ul>
+  <% end %>
+</div>
+</div>
 <div class="d-flex justify-content-center">
   <div><%= link_to "Create a new Sandwich", new_sandwich_path, class: "btn btn-blue" %></div>
+</div>
