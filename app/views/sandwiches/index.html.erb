@@ -1,0 +1,13 @@
+<h1>sandwiches</h1>
+<% @sandwiches.each do |sarny| %>
+  <ul>
+    <%= sarny.name %>
+    <div><%= sarny.description %></div>
+    <div><%= sarny.cost %></div>
+    <div>
+      <%=link_to "Show Ingredients", sandwich_path(sarny) %>
+    </div>
+  </ul>
+<% end %>
+<div class="d-flex justify-content-center">
+  <div><%= link_to "Create a new Sandwich", new_sandwich_path, class: "btn btn-blue" %></div>

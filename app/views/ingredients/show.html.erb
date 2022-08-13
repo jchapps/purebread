@@ -1,0 +1,7 @@
+<%= @ingredient.name %>
+<% @ingredient.shops.each do |shop| %>
+  <ul>
+    <p><%= shop.sandwich.name %></p>
+    <p><%= shop.sandwich.cost %></p>
+  </ul>
+<% end %>

@@ -1,0 +1,10 @@
+<div class="cotainer-fluid">
+  <h1><%= @sandwich.name %></h1>
+  <% @sandwich.shops.each do |shop| %>
+    <ul>
+      <%= shop.ingredient.name %>
+      <%= shop.ingredient.description %>
+    </div>
+  </ul>
+<% end %>
+<div><%= link_to "Add Ingredient", new_sandwich_shop_path(@sandwich), class: "btn btn-blue" %></div>

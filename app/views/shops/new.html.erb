@@ -1,0 +1,4 @@
+<%= simple_form_for [@sandwich, @shop]  do |f| %>
+  <%= f.association :ingredient %>
+  <%= f.button :submit %>
+<% end %>
