@@ -1,6 +1,7 @@
 class SandwichesController < ApplicationController
   #before_action :set_sandwich
 
+
   def index
     @sandwiches = Sandwich.all
   end
@@ -30,5 +31,5 @@ private
 # end
 
 def sandwich_params
-  params.require(:sandwich).permit(:description, :image_url, :vegetarian, :cost, :name)
+  params.require(:sandwich).permit(:description, :photo, :vegetarian, :cost, :name)
 end

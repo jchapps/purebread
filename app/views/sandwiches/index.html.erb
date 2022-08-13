@@ -4,6 +4,7 @@
     <%= sarny.name %>
     <div><%= sarny.description %></div>
     <div><%= sarny.cost %></div>
+    <img class="card-img-top" src='<%= sarny.photo.attached? ? cl_image_path(sarny.photo.key) : "http://source.unsplash.com/featured/?#{sarny.name}sandwich&#{rand(1000)}" %>'>
     <div>
       <%=link_to "Show Ingredients", sandwich_path(sarny) %>
     </div>
