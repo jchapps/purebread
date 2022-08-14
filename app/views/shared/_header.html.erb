@@ -1,32 +1,15 @@
-<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">
-      <%# <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/logo.png" /> %>
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto">
-        <li class="nav-item active">
-          <%= link_to "Sandwiches", root_path %>
-        </li>
-        <div>
-          <li class="nav-item active">
-            <%= link_to "Ingredients", ingredients_path %>
-          </li>
-        </div>
-        <li class="nav-item dropdown">
-          <img class="avatar dropdown-toggle" id="navbarDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="https://kitt.lewagon.com/placeholder/users/ssaunier" />
-          <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" data-turbo-method="delete" href="#">Log out</a>
-          </div>
-        </li>
-        <!--li class="nav-item"-->
-        <!--/li-->
-      </ul>
-    </div>
-  </div>
-</div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <h1> PURE BREAD </h1>
+  <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+    <li class="nav-item active">
+      <%= link_to "Sandwiches", root_path, class: "nav-link" %>
+    </li>
+    <li class="nav-item active">
+      <%= link_to "Ingredients", ingredients_path, class:"nav-link" %>
+    </li>
+  </ul>
+  <form class="form-inline my-2 my-lg-0">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+  </form>
+</nav>
