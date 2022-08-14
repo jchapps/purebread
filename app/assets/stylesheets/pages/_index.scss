@@ -1,2 +1,16 @@
 // Import page-specific CSS files here.
 @import "home";
+
+.btn {
+  border-radius: 1em;
+  background-color: rgba(237, 106, 90, 0.7);
+  color: #ffffff;
+  padding: 0.5em 1.5em;
+  border-color: rgba(237, 106, 90, 0.7);
+}
+
+.btn:hover {
+  background-color: rgba(247, 51, 25, 0.7);
+  color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}

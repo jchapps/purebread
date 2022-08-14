@@ -1,7 +1,13 @@
-<%= @ingredient.name %>
-<% @ingredient.shops.each do |shop| %>
-  <ul>
-    <p><%= shop.sandwich.name %></p>
-    <p><%= shop.sandwich.cost %></p>
-  </ul>
-<% end %>
+<div class="container">
+  <div class="d-flex justify-content-center">
+    <h1>Fillings</h1>
+    <div><%= link_to "Add a filling", new_sandwich_shop_path(@sandwich), class: "btn btn-blue" %></div>
+  </div>
+  <div class="cards">
+    <% @ingredient.shops.each do |shop| %>
+      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= shop.ingredient.image_url %>)">
+        <%= shop.sandwich.name %>
+      </div>
+    <% end %>
+  </div>
+</div>

@@ -1,10 +1,11 @@
-<h1>Ingredients</h1>
-<%  @ingredients.each do |ingredient| %>
-  <ul>
-    <%= ingredient.name %>
-    <%= ingredient.description %>
-    <div>
-      <%=link_to "Show Sandwiches #{ingredient.name} is in!", ingredient_path(ingredient) %>
+<div class="container">
+  <h1>Fillings</h1>
+  <div class="container">
+    <div class="cards">
+      <% @ingredients.each do |ingredient| %>
+        <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= ingredient.image_url %>)">
+          <%= ingredient.name %>
+        </div>
+      <% end %>
     </div>
-  </ul>
-<% end %>
+  </div>

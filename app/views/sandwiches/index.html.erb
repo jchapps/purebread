@@ -1,5 +1,10 @@
-<h1>sandwiches</h1>
-<div class="container">
+<div class="d-flex justify-content-center">
+  <div>
+    <h1>Sandwich</h1>
+  </div>
+  <div><%= link_to "Create a new Sandwich", new_sandwich_path, class: "btn btn-primary" %></div>
+</div>
+<div class="container" style="align-content-center">
   <div class="d-flex justify-content-center">
     <div class="row">
       <% @sandwiches.each do |sarny| %>
@@ -14,7 +19,4 @@
       <% end %>
     </div>
   </div>
-</div>
-<div class="d-flex justify-content-center">
-  <div><%= link_to "Create a new Sandwich", new_sandwich_path, class: "btn btn-blue" %></div>
 </div>

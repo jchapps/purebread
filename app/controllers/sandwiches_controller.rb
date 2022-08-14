@@ -1,7 +1,6 @@
 class SandwichesController < ApplicationController
   #before_action :set_sandwich
 
-
   def index
     @sandwiches = Sandwich.all
   end
