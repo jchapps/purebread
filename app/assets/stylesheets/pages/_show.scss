@@ -1,3 +1,18 @@
 .d-flex {
   justify-content: space-around !important;
 }
+
+.btn {
+  border-radius: 1em;
+  background-color: #CED3DC(237, 106, 90, 0.7);
+  color: #ffffff;
+  padding: 0.5em 1.5em;
+  border-color: #CED3DC(237, 106, 90, 0.7);
+}
+
+.btn:hover {
+  background-color: #CED3DC(247, 51, 25, 0.7);
+  color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-color: #CED3DC(237, 106, 90, 0.7);
+}
