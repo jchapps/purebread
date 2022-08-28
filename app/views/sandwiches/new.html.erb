@@ -1,8 +1,8 @@
 <div class="container">
-  <%= simple_form_for @sandwich do |f| %>
+  <%= simple_form_for [@sandwich] do |f| %>
     <%= f.input :name %>
     <%= f.input :photo, as: :file %>
-    <%= f.association :ingredients, :as => :radio_buttons %>
+    <%= f.association :ingredients, :as => :radio_buttons, include_blank: false %>
     <%= f.input :description %>
     <%= f.submit 'Add Filling', class: 'btn btn-primary mt-2' %>
   <% end %>

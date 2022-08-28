@@ -30,5 +30,5 @@ private
 # end
 
 def sandwich_params
-  params.require(:sandwich).permit(:description, :photo, :vegetarian, :cost, :name)
+  params.require(:sandwich).permit(:description, :photo, :vegetarian, :cost, :name, :ingredient)
 end

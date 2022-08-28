@@ -1,11 +1,16 @@
 <div class="container">
-  <h1>Fillings</h1>
+  <div class="title-header">
+    <h1>Fillings</h1>
+  </div>
   <div class="container">
     <div class="cards">
       <% @ingredients.each do |ingredient| %>
-        <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= ingredient.image_url %>)">
-          <%= ingredient.name %>
-        </div>
+        <%= link_to ingredient_path(ingredient) do %>
+          <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= ingredient.image_url %>)">
+            <%= ingredient.name %>
+          </div>
+        <% end %>
       <% end %>
     </div>
   </div>
+</div>
