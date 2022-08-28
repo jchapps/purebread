@@ -118,13 +118,13 @@ Ingredient.create!(
     Ingredient.create!(
     name: "Salmon",
     description: "Fantastic for fish lovers",
-    image_url: "https://itsnotcomplicatedrecipes.com/wp-content/uploads/2022/01/Strawberry-Jam-Feature.jpg"
+    image_url: "https://health.clevelandclinic.org/wp-content/uploads/sites/3/2014/03/salmonWildVsFarmed-636216088-770x533-1.jpg"
   )
 
   Ingredient.create!(
     name: "Beetroot",
     description: "Delicious winter filling",
-    image_url: "https://www.eatthis.com/wp-content/uploads/sites/4/2021/06/smooth-peanut-butter-spoon.jpg?quality=82&strip=1"
+    image_url: "https://i0.wp.com/post.medicalnewstoday.com/wp-content/uploads/sites/3/2019/11/raw-beetroot-on-a-wooden-surface.jpg?w=1155&h=1444"
   )
 
     Ingredient.create!(
@@ -137,4 +137,10 @@ Ingredient.create!(
     name: "Onion",
     description: "Essential veg",
     image_url: "https://cdn.mos.cms.futurecdn.net/ddQekVaoCnskUXitSXNZYn.jpg"
+  )
+
+  Ingredient.create!(
+    name: "Pepper",
+    description: "Spicy kick",
+    image_url: "https://www.jessicagavin.com/wp-content/uploads/2019/05/types-of-peppers-1-600x900.jpg"
   )
