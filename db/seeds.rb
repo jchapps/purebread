@@ -102,3 +102,13 @@ Ingredient.create!(
     description: "Fried goodness",
     image_url: " https://www.ambitiouskitchen.com/wp-content/uploads/2021/08/How-to-Bake-Bacon-in-the-Oven-3.jpg"
   )
+
+Ingredient.create!(
+    name: "Jam", description: "Fresh sugary fruit",
+    image_url: "https://itsnotcomplicatedrecipes.com/wp-content/uploads/2022/01/Strawberry-Jam-Feature.jpg"
+  )
+
+Ingredient.create!(
+    name: "Peanut Butter", description: "Protein and calories",
+    image_url: "https://www.eatthis.com/wp-content/uploads/sites/4/2021/06/smooth-peanut-butter-spoon.jpg?quality=82&strip=1"
+  )
