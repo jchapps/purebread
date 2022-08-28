@@ -103,12 +103,38 @@ Ingredient.create!(
     image_url: " https://www.ambitiouskitchen.com/wp-content/uploads/2021/08/How-to-Bake-Bacon-in-the-Oven-3.jpg"
   )
 
-Ingredient.create!(
-    name: "Jam", description: "Fresh sugary fruit",
+  Ingredient.create!(
+    name: "Jam",
+    description: "Fresh sugary fruit",
     image_url: "https://itsnotcomplicatedrecipes.com/wp-content/uploads/2022/01/Strawberry-Jam-Feature.jpg"
   )
 
-Ingredient.create!(
-    name: "Peanut Butter", description: "Protein and calories",
+  Ingredient.create!(
+    name: "Peanut Butter",
+    description: "Protein and calories",
     image_url: "https://www.eatthis.com/wp-content/uploads/sites/4/2021/06/smooth-peanut-butter-spoon.jpg?quality=82&strip=1"
+  )
+
+    Ingredient.create!(
+    name: "Salmon",
+    description: "Fantastic for fish lovers",
+    image_url: "https://itsnotcomplicatedrecipes.com/wp-content/uploads/2022/01/Strawberry-Jam-Feature.jpg"
+  )
+
+  Ingredient.create!(
+    name: "Beetroot",
+    description: "Delicious winter filling",
+    image_url: "https://www.eatthis.com/wp-content/uploads/sites/4/2021/06/smooth-peanut-butter-spoon.jpg?quality=82&strip=1"
+  )
+
+    Ingredient.create!(
+    name: "Pepperoni",
+    description: "Spicy meat",
+    image_url: "https://assets.bonappetit.com/photos/615ef45230a120edc42ad1e8/1:1/w_1202,h_1202,c_limit/Pepperoni.jpg"
+  )
+
+  Ingredient.create!(
+    name: "Onion",
+    description: "Essential veg",
+    image_url: "https://cdn.mos.cms.futurecdn.net/ddQekVaoCnskUXitSXNZYn.jpg"
   )
